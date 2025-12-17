@@ -51,6 +51,15 @@ h1 {
     margin-bottom: 1em;
 }
 
+.active {
+    border-bottom: 1px solid #252525;
+}
+
+/* Navbar styles with dropdown menu */
+nav {
+    position: absolute;
+}
+
 /* Main content */
 main {
     background-color: lightblue;
