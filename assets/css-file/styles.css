@@ -92,8 +92,18 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    color: #3a3a3a;
+    padding: 5%;
 }
 
 /* Media Queries: tablets and larger screens */
@@ -115,7 +125,7 @@ footer {
         padding-left: 1rem;
     }
 
-    #nav-toggle-label {
+    .nav-toggle-label {
         display: none;
     }
 
