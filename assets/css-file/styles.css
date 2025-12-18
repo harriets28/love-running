@@ -67,6 +67,7 @@ nav {
     left: 0;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%;
 }
 
 /* Nav toggle */
@@ -85,11 +86,36 @@ nav {
 /* Main content */
 main {
     background-color: lightblue;
-    flex: 1 0 auto;
     /* Make main element take up any surplus space to push footer to bottom */
+    flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /* Footer */
 footer {
     background-color: orange;
+}
+
+/* Media Queries: tablets and larger screens */
+@media screen (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    #nav-toggle-label {
+        display: none;
+    }
 }
