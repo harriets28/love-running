@@ -201,16 +201,17 @@ main {
     color: #fafafa;
 }
 
-/* Gallery section */
-#photos img {
-    width: 100%;
-    line-height: 1em;
-}
-
+/* Gallery section (mobile default) */
 #photos {
+    display: block;
     line-height: 0;
     column-count: 1;
     column-gap: 0;
+}
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
 }
 
 /* Form */
