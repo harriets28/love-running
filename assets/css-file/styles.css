@@ -28,6 +28,10 @@ h3 {
     color: #252525;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -85,10 +89,21 @@ nav {
 }
 
 /* Main content */
+
 main {
-    /* Make main element take up any surplus space to push footer to bottom */
+    /* Enlarge main element to push footer down*/
+
     flex: 1 0 auto;
+
+    /* Add margin at the top to prevent content from being covered by the header */
+
     margin-top: 47px;
+
+    /* Enable flex properties for child elements */
+
+    display: flex;
+
+    flex-direction: column;
 }
 
 /* Hero section */
@@ -322,11 +337,6 @@ main {
         text-align: end;
         align-self: flex-end;
     }
-}
-
-/* Gallery */
-#photos {
-    column-count: 3;
 }
 
 /* Gallery */
