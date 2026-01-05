@@ -341,12 +341,6 @@ main {
     }
 }
 
-/* Gallery */
-
-#photos {
-    column-count: 3;
-}
-
 /* Form */
 
 #signup {
